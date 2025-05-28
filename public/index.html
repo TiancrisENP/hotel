@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Habitaciones del Hotel</h1>
+  <div id="rooms-container"></div>
+
+  <h2>Crear Nueva Habitación</h2>
+  <form id="room-form">
+    <input type="text" id="numero" placeholder="Número" required>
+    <select id="tipo" required>
+        <option value="">Selecciona un tipo</option>
+        <option value="Sencilla">Sencilla</option>
+        <option value="Doble">Doble</option>
+        <option value="Suite">Suite</option>
+        <option value="Familiar">Familiar</option>
+        <option value="Ejecutiva">Ejecutiva</option>
+      </select>
+      
+    <input type="number" id="valor" placeholder="Valor" readonly required>
+
+    <button type="submit">Guardar</button>
+  </form>
+
+  <h1>Reservas del Hotel</h1>
+<div id="bookings-container"></div>
+
+<h2>Crear Nueva Reserva</h2>
+<form id="booking-form">
+    <select id="numero_habitacion" required>
+        <option value="">Selecciona una habitación</option>
+      </select>
+      
+  <input type="text" id="nombre_cliente" placeholder="Nombre Cliente" required>
+  <input type="text" id="telefono_cliente" placeholder="Teléfono" required>
+  <input type="date" id="fecha_reservacion" required>
+  <input type="date" id="fecha_entrada" required>
+  <input type="date" id="fecha_salida" required>
+  <button type="submit">Guardar Reserva</button>
+</form>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

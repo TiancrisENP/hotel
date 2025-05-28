@@ -1,0 +1,50 @@
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  h1, h2 {
+    color: #ffa07a;
+  }
+  
+  #rooms-container {
+    margin-bottom: 30px;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  form input, form button {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  form input {
+    width: 150px;
+  }
+  
+  form button {
+    background-color: #90ee90;
+    color: black;
+    cursor: pointer;
+  }
+  
+  #bookings-container {
+    margin-top: 30px;
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  form {
+    margin-bottom: 30px;
+  }
+  
+  form input[type="date"] {
+    width: 160px;
+  }
+  
